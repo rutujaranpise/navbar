@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        body{
+     padding: 0;
+
+     margin: 0;
+     box-sizing: border-box;
+        }
+.navbar{
+position: fixed;
+top: 0;
+   width: 100%;
+   align-items: center;
+    background-color: blue;
+    color: aliceblue;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-radius: 20px;
+
+}
+.brand{
+
+}
+.menu{
+margin-left: 300px;
+}
+.search{
+margin-left: 100px;
+
+}
+.menu-item{
+    color: beige;
+  font-size: 20px;
+  align-items: center;
+  padding: 0px 10px;
+ text-decoration: none;
+}
+.menu-item:hover{
+    text-decoration: underline;
+}
+.search-item{
+    font-size: 15px;
+    color: bisque;
+    border-radius: 20px;
+    margin-right: 50px;
+}
+.brand{
+    margin-left: 10px;
+display: flex;
+align-items: center;
+font-size: 13px;
+}
+
+.menu-bar{
+    
+    margin-right: 30px;
+}
+/*Mobile*/
+@media (max-width:600px){
+    .search-item{
+        display: none;
+    }
+    .menu{
+display: none;
+}
+.menu-bar{
+    margin-left: auto;
+    margin-right: 20px;
+}
+}
+
+  /*tablet*/
+  @media (min-width:601) and  (max-width:800px){
+    .search-item{
+        display: none;
+    }
+    .menu{
+display: none;
+}
+.menu-bar{
+   margin-left: auto;
+   margin-right: 20px;
+}
+  }
+ /*laptop*/
+ @media (min-width:801) and  (max-width:2000px){
+
+    .menu{
+margin-left: 300px;
+}
+.search-item{
+        display: none;
+    }
+    .menu-bar{
+      display: none;
+}
+ }
+</style>
+</head>
+<body>
+    <div class="navbar"> 
+       <div class="brand">
+        <img src="./bakery.png" height="40px">
+        <h2>cake shop</h2>
+       </div>
+       <div class="menu"> 
+       <a href="#" class="menu-item">Home</a>
+       <a href="#" class="menu-item">about us</a>
+       <a href="#" class="menu-item">contact us</a>
+       </div>
+       <div class="search"> 
+        <input type="text" placeholder="search" class="search-item">
+       </div>
+       <img src="./menu.png" height="50px " class="menu-bar">
+    </div>
+    
+</body>
+</html>
