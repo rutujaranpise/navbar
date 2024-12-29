@@ -90,17 +90,16 @@ display: none;
 }
   }
  /*laptop*/
- @media (min-width:801) and  (max-width:2000px){
+ @media (min-width:801px) and  (max-width:2000px){
 
     .menu{
 margin-left: 300px;
 }
-.search-item{
-        display: none;
-    }
-    .menu-bar{
-      display: none;
-}
+
+    
+   .menu-bar{
+    display: none;
+   }
  }
 </style>
 </head>
@@ -118,7 +117,9 @@ margin-left: 300px;
        <div class="search"> 
         <input type="text" placeholder="search" class="search-item">
        </div>
-       <img src="./menu.png" height="50px " class="menu-bar">
+       <div class="menu-bar">
+           <img src="./menu.png" height="50px " class="menu-bar">
+       </div>
     </div>
     
 </body>
