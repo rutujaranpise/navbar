@@ -28,11 +28,9 @@ top: 0;
 .brand{
 
 }
-.menu{
-margin-left: 300px;
-}
+
 .search{
-margin-left: 100px;
+margin-left: 50px;
 
 }
 .menu-item{
@@ -64,6 +62,9 @@ font-size: 13px;
 }
 /*Mobile*/
 @media (max-width:600px){
+      .menu{
+        margin-left: auto;
+      }
     .search-item{
         display: none;
     }
@@ -77,7 +78,13 @@ display: none;
 }
 
   /*tablet*/
-  @media (min-width:601) and  (max-width:800px){
+  @media (min-width:501) and  (max-width:1000){
+    .menu{
+        margin-left: none;
+      }
+      .menu{
+    margin-right: none;
+}
     .search-item{
         display: none;
     }
@@ -90,13 +97,14 @@ display: none;
 }
   }
  /*laptop*/
- @media (min-width:801px) and  (max-width:2000px){
+ @media (min-width:1100px) and  (max-width:2000px){
 
     .menu{
-margin-left: 300px;
+margin-left: auto;
 }
-
-    
+.menu{
+    margin-right: none;
+}
    .menu-bar{
     display: none;
    }
