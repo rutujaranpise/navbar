@@ -1,137 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>navbar</title>
+    <title>Navbar</title>
     <style>
-        body{
-     padding: 0;
-
-     margin: 0;
-     box-sizing: border-box;
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
         }
-.navbar{
-position: fixed;
-top: 0;
-   width: 100%;
-   align-items: center;
-    background-color: blue;
-    color: aliceblue;
-    display: flex;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    border-radius: 20px;
 
-}
-.menu-bar{
-  display: none;
-}
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            align-items: center;
+            background-color: blue;
+            color: aliceblue;
+            display: flex;
+            z-index: 100;
+            border-radius: 20px;
+        }
 
-.search{
-margin-left: 40px;
+        .search {
+            margin-left: 40px;
+        }
 
-}
-.menu-item{
-    color: beige;
-  font-size: 10px;
-  align-items: center;
-  padding: 0px 10px;
- text-decoration: none;
- 
-}
+        .menu-item {
+            color: beige;
+            font-size: 10px;
+            align-items: center;
+            padding: 0px 10px;
+            text-decoration: none;
+        }
 
-.menu-item:hover{
-    text-decoration: underline;
-}
-.search-item{
-    font-size: 12px;
-    color: bisque;
-    border-radius: 20px;
-    margin-right: 40px;
-}
-.brand{
-    margin-left: 10px;
-display: flex;
-align-items: center;
-font-size: 10px;
-}
+        .menu-item:hover {
+            text-decoration: underline;
+        }
 
-.menu-bar{
-    
-    margin-right: 30px;
-}
+        .search-item {
+            font-size: 12px;
+            color: bisque;
+            border-radius: 20px;
+            margin-right: 40px;
+        }
 
-/*Mobile*/
-@media (max-width:500px){
-      .menu{
-        margin-left: auto;
-      }
-    .search-item{
-        display: none;
-    }
-    .menu{
-display: none;
-}
-.menu-bar{
-    margin-left: auto;
-    margin-right: 20px;
-}
-}
+        .brand {
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            font-size: 10px;
+        }
 
-  /*tablet*/
-  @media (min-width:501) and  (max-width:800){
-    .menu-item{
-    color: beige;
-  font-size: 8px;
-  align-items: center;
-  padding: 0px 4px;
- text-decoration: none;
-} 
-.search-item{
-    font-size: 10px;
-    margin-right: 5px;
-}
-.menu-bar{
-  display: none;
-}
-  }
- /*laptop*/
- @media (min-width:801px) and  (max-width:2000px){
+        .menu-bar {
+            margin-right: 30px;
+        }
 
-    .menu{
-margin-left: auto;
-font-size: 10px;
-}
+       
+        @media (max-width: 400px) {
+            .menu {
+                margin-left: auto;
+                display: none; 
+            }
 
-.menu{
-    margin-right: none;
-}
-   .menu-bar{
-    display: none;
-   }
- }
-</style>
+            .search-item {
+                display: none;
+            }
+
+            .menu-bar {
+                margin-left: auto;
+                margin-right: 20px;
+            }
+        }
+
+       
+        @media (min-width: 401px) and (max-width: 800px) {
+            .menu-item {
+                color: beige;
+                font-size: 8px;
+                align-items: center;
+                padding: 0px 4px;
+                text-decoration: none;
+            }
+
+            .search-item {
+                font-size: 10px;
+                margin-right: 5px;
+            }
+
+            .menu-bar {
+                display: none;
+            }
+        }
+
+        
+        @media (min-width: 801px) {
+            .menu {
+                margin-left: auto;
+                font-size: 10px;
+            }
+
+            .menu-bar {
+                display: none;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <div class="navbar"> 
-       <div class="brand">
-        <img src="./bakery.png" height="30px">
-        <h2>cake shop</h2>
-       </div>
-       <div class="menu"> 
-       <a href="#" class="menu-item">Home</a>
-       <a href="#" class="menu-item">about us</a>
-       <a href="#" class="menu-item">contact us</a>
-       </div>
-       <div class="search"> 
-        <input type="text" placeholder="search" class="search-item">
-       </div>
-       <div class="menu-bar">
-           <img src="./menu.png" height="30px " class="menu-bar">
-       </div>
+    <div class="navbar">
+        <div class="brand">
+            <img src="./bakery.png" height="30px">
+            <h2>cake shop</h2>
+        </div>
+        <div class="menu">
+            <a href="#" class="menu-item">Home</a>
+            <a href="#" class="menu-item">About Us</a>
+            <a href="#" class="menu-item">Contact Us</a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search" class="search-item">
+        </div>
+        <div class="menu-bar">
+            <img src="./menu.png" height="30px" class="menu-bar">
+        </div>
     </div>
-    
 </body>
+
 </html>
